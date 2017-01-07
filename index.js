@@ -5,6 +5,8 @@
 import dg from 'debug';
 const debug = dg('balancer');
 import logger from './lib/logger';
+import monitoring from './lib/monitoring';
 
 debug('Initializing.');
+monitoring();
 logger();

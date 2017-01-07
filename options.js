@@ -29,6 +29,21 @@ const optionsSpec = {
     required: true,
     default: 'false',
     env: 'BALANCER_IS_MASTER'
+  },
+  SYSMS: {
+    required: true,
+    default: 'components/sysms',
+    env: 'SYSMS_ETCD_PATH'
+  },
+  BALANCERS: {
+    required: true,
+    default: 'components/balancers',
+    env: 'BALANCERS_ETCD_PATH'
+  },
+  REGISTRATORS: {
+    required: true,
+    default: 'components/registrators',
+    env: 'REGISTRATORS_ETCD_PATH'
   }
 };
 
