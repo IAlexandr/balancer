@@ -1,0 +1,24 @@
+{
+  "name": "balancer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAlexandr/balancer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IAlexandr/balancer/issues"
+  },
+  "homepage": "https://github.com/IAlexandr/balancer#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0"
+  }
+}
