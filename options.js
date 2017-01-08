@@ -13,12 +13,17 @@ const optionsSpec = {
   RESTART_TO: {
     required: true,
     default: '10000', // ms
-    env: 'BALANCER_ETCD_CONN'
+    env: 'BALANCER_RESTART_TO'
   },
   PROOF_ALIVE_TO: {
     required: true,
     default: '15000', // ms
-    env: 'BALANCER_ETCD_CONN'
+    env: 'BALANCER_PROOF_ALIVE_TO'
+  },
+  CHECK_SYSMS_TO: {
+    required: true,
+    default: '15000', // ms
+    env: 'BALANCER_CHECK_SYSMS_TO'
   },
   BALANCER_ID: {
     required: true,
@@ -33,17 +38,17 @@ const optionsSpec = {
   SYSMS: {
     required: true,
     default: 'components/sysms',
-    env: 'SYSMS_ETCD_PATH'
+    env: 'BALANCER_SYSMS_ETCD_PATH'
   },
   BALANCERS: {
     required: true,
     default: 'components/balancers',
-    env: 'BALANCERS_ETCD_PATH'
+    env: 'BALANCER_BALANCERS_ETCD_PATH'
   },
   REGISTRATORS: {
     required: true,
     default: 'components/registrators',
-    env: 'REGISTRATORS_ETCD_PATH'
+    env: 'BALANCER_REGISTRATORS_ETCD_PATH'
   }
 };
 
