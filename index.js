@@ -6,7 +6,14 @@ import dg from 'debug';
 const debug = dg('balancer');
 import logger from './lib/logger';
 import monitoring from './lib/monitoring';
+import {init as amqpInit} from './lib/amqp';
+
 
 debug('Initializing.');
-monitoring();
-logger();
+amqpInit()
+  .then(() => Promise.all([
+    monitoring(),
+    logger()
+  ]))
+  .then(() => debug('Initialized.'))
+  .catch(err => debug(err.message))
