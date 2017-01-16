@@ -47,7 +47,7 @@ const optionsSpec = {
   },
   REGISTRATORS: {
     required: true,
-    default: 'components/registrators',
+    default: 'components/regs',
     env: 'BALANCER_REGISTRATORS_ETCD_PATH'
   }
 };
